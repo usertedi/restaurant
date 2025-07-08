@@ -1,1 +1,108 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gebeta Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-nunito">
+  <header class="bg-black text-white p-4 flex items-center justify-between sticky top-0 z-50">
+    <img src="hero.web" alt="Gebeta Logo" class="h-12">
+    <nav class="space-x-6">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#menu" class="hover:underline">Menu</a>
+      <a href="#gallery" class="hover:underline">Gallery</a>
+      <a href="#testimonials" class="hover:underline">Testimonials</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <section class="h-[80vh] bg-cover bg-center flex items-center justify-center text-white text-center px-4" style="background-image: url('images/hero.jpg');">
+    <h1 class="text-4xl md:text-5xl bg-black/60 p-6 rounded-lg">Authentic Ethiopian Cuisine in Addis Ababa</h1>
+  </section>
+
+  <section id="about" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-6">About Us</h2>
+    <p class="text-lg text-center">Welcome to Gebeta Restaurant! We celebrate the flavors and culture of Ethiopia with every dish we serve. Founded in 2020 in the heart of Addis Ababa, our mission is to offer an authentic and memorable dining experience for locals and visitors alike. From traditional injera to spicy tibs and coffee ceremony, our food brings people together like a true gebeta.</p>
+  </section>
+
+  <section id="menu" class="py-16 bg-gray-100 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Menu</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white rounded-xl shadow p-4">
+        <img src="dorowot.jpg" alt="Doro Wat" class="rounded-lg w-full h-48 object-cover">
+        <h3 class="mt-4 text-xl font-semibold">Doro Wat</h3>
+        <p>Spicy chicken stew with boiled eggs, served with injera. <strong>180 ETB</strong></p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4">
+        <img src="sigatibs.jpg" alt="Siga Tibs" class="rounded-lg w-full h-48 object-cover">
+        <h3 class="mt-4 text-xl font-semibold">Siga Tibs</h3>
+        <p>Beef sautéed with onions, peppers, and spices. <strong>150 ETB</strong></p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-4">
+        <img src="vegcombo.jpg" alt="Vegetarian Combo" class="rounded-lg w-full h-48 object-cover">
+        <h3 class="mt-4 text-xl font-semibold">Vegetarian Combo</h3>
+        <p>Assorted lentils, greens, and veggies on injera. <strong>130 ETB</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Gallery</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <img src="gallery1.webp" alt="Interior" class="rounded-xl shadow w-full h-64 object-cover">
+      <img src="gallery2.webp" alt="Dish" class="rounded-xl shadow w-full h-64 object-cover">
+      <img src="gallery3.jpg" alt="Coffee" class="rounded-xl shadow w-full h-64 object-cover">
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-16 bg-gray-100 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Testimonials</h2>
+    <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <p>“Absolutely the best Ethiopian food in Addis!”</p>
+        <p class="mt-2 font-semibold">- Hana M.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <p>“Their doro wat reminded me of my grandma’s cooking.”</p>
+        <p class="mt-2 font-semibold">- Daniel K.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <p>“I loved the cozy atmosphere and fast service.”</p>
+        <p class="mt-2 font-semibold">- Sarah T.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <p>“Perfect place for tourists wanting real Ethiopian taste!”</p>
+        <p class="mt-2 font-semibold">- James L.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-black text-white py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="mb-2">Phone: +251 912 345678</p>
+      <p class="mb-2">Email: info@gebetarestaurant.com</p>
+      <p class="mb-2">Address: Bole, Addis Ababa, Ethiopia</p>
+      <p class="mb-6">Open Daily: 8 AM – 10 PM</p>
+      <div class="mb-6">
+        <p class="mb-2">Follow us on:</p>
+        <div class="space-x-4">
+          <a href="#" class="underline">Facebook</a>
+          <a href="#" class="underline">Instagram</a>
+          <a href="#" class="underline">TikTok</a>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden">
+        <iframe src="https://maps.google.com/maps?q=addis%20ababa&t=&z=13&ie=UTF8&iwloc=&output=embed" class="w-full h-64 rounded"></iframe>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
